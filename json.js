@@ -21,6 +21,7 @@ function sendJSON() {
     if (resp.ok) {
       // очищаем поле
       new_text.value = "";
+      result.innerHTML = 'данные переданы';
     } else {
       result.innerHTML = 'ERROR: ' + resp.status + ' ' + resp.statusText;
     }
