@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Отправляем JSON-данные на сервер
+  </title>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="json.js"></script>
+</head>
+<body style="text-align:center;" id="body">
+<h1>Отправка строки в базу на сервер</h1>
+  <!-- делаем форму с полями ввода -->
+  <p>
+    <input type="text" id="new_text" placeholder="Строка для отправки на сервер"><br>
+
+    <!-- по нажатию на эту кнопку данные уйдут на сервер -->
+    <button onclick="sendJSON()">Отправить JSON</button>
+	    <!-- а вот тут они появятся снова, но уже после обработки сервером -->
+    <p class="result" style="color:blue"></p>
+  </p>
+</body>
+</html>
