@@ -5,7 +5,7 @@ function sendJSON() {
  
   // формируем данные
   let data = [{
-    Datatime: datatime.value || 'ничего не написали',
+    Datatime: text.value || 'ничего не написали',
   }];
  
   // отправка и анализ
